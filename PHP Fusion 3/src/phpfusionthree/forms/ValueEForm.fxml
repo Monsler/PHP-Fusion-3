@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304" prefWidth="488" styleClass="">
+  <children>
+    <ListViewEx editable="false" fixedCellSize="-1" focusTraversable="true" id="listView" layoutX="344" layoutY="8" prefHeight="244" prefWidth="136" styleClass="list-view ">
+      <items xmlns:fx="http://javafx.com/fxml">
+        <FXCollections fx:factory="observableArrayList"/>
+      </items>
+    </ListViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-listView" visible="1"/>
+    <TextArea editable="true" focusTraversable="true" id="textArea" layoutX="8" layoutY="8" prefColumnCount="40" prefHeight="80" prefWidth="328" promptText="Parameter" styleClass="text-input text-area " text="" wrapText="false">
+      <font>
+        <Font name="Consolas" size="16"/>
+      </font>
+    </TextArea>
+    <Data cursor="DEFAULT" enabled="1" id="data-textArea" visible="1"/>
+    <FlatButton alignment="CENTER" borderRadius="15" clickColor="#333333" color="#4d4d4d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#666666" id="button" layoutX="8" layoutY="96" prefHeight="32" prefWidth="88" styleClass="x-flat-button " text="Save" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="Consolas" size="18"/>
+      </font>
+    </FlatButton>
+    <Data cursor="HAND" enabled="1" id="data-button" tooltipText="Saves current parameter" visible="1"/>
+    <TabPaneEx focusTraversable="true" id="tabPane" layoutX="8" layoutY="136" prefHeight="160" prefWidth="328" style="-fx-font-size: 12;-fx-font-family: Consolas;" styleClass="tab-pane " tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Data">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="139" prefWidth="328" styleClass="">
+              <children>
+                <ListViewEx editable="false" fixedCellSize="-1" focusTraversable="true" id="listViewAlt" layoutX="0" layoutY="0" prefHeight="136" prefWidth="328" style="-fx-font-size: 12;-fx-font-family: Consolas;" styleClass="list-view ">
+                  <items xmlns:fx="http://javafx.com/fxml">
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Variable"/>
+                      <String fx:value="Project path"/>
+                      <String fx:value="Read from save"/>
+                      <String fx:value="Encode to json"/>
+                      <String fx:value="Decode json"/>
+                      <String fx:value="String"/>
+                      <String fx:value="Number"/>
+                    </FXCollections>
+                  </items>
+                </ListViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-listViewAlt" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Comparing">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="139" prefWidth="328" styleClass="">
+              <children>
+                <ListViewEx editable="false" fixedCellSize="-1" focusTraversable="true" id="listView3" layoutX="0" layoutY="0" prefHeight="136" prefWidth="328" styleClass="list-view ">
+                  <items xmlns:fx="http://javafx.com/fxml">
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Equals"/>
+                      <String fx:value="True"/>
+                      <String fx:value="False"/>
+                      <String fx:value="Or (in variable)"/>
+                      <String fx:value="Or (in compare)"/>
+                    </FXCollections>
+                  </items>
+                </ListViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-listView3" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Dialog types">
+          <content>
+            <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="139" prefWidth="328" styleClass="">
+              <children>
+                <ListViewEx editable="false" fixedCellSize="-1" focusTraversable="true" id="listView4" layoutX="0" layoutY="0" prefHeight="136" prefWidth="328" style="-fx-font-size: 12;-fx-font-family: Consolas;" styleClass="list-view ">
+                  <items xmlns:fx="http://javafx.com/fxml">
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="Information"/>
+                      <String fx:value="Warning"/>
+                      <String fx:value="Error"/>
+                    </FXCollections>
+                  </items>
+                </ListViewEx>
+                <Data cursor="DEFAULT" enabled="1" id="data-listView4" visible="1"/>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPaneEx>
+    <Data cursor="HAND" draggable="NONE" enabled="1" id="data-tabPane" visible="1"/>
+    <FlatButton alignment="CENTER" borderRadius="15" clickColor="#333333" color="#4d4d4d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#666666" id="buttonAlt" layoutX="104" layoutY="96" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="CA" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="Consolas" size="18"/>
+      </font>
+    </FlatButton>
+    <Data cursor="HAND" enabled="1" id="data-buttonAlt" tooltipText="Clears parameter field" visible="1"/>
+    <FlatButton alignment="CENTER" borderRadius="15" clickColor="#333333" color="#4d4d4d" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" hoverColor="#666666" id="button3" layoutX="144" layoutY="96" prefHeight="32" prefWidth="32" styleClass="x-flat-button " text="CR" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="Consolas" size="18"/>
+      </font>
+    </FlatButton>
+    <Data cursor="HAND" enabled="1" id="data-button3" tooltipText="Removes 1 symbol from parameter field" visible="1"/>
+    <ColorPicker focusTraversable="true" id="colorPicker" layoutX="344" layoutY="261" prefHeight="32" prefWidth="136" style=".color-picker .color-picker-label { &#10;        -fx-text-fill: blue; &#10;} &#10;  &#10;.color-picker .picker-color .picker-color-rect { &#10;        -fx-stroke: black; &#10;        -fx-stroke-width: 2; &#10;} &#10;  " styleClass="combo-box-base color-picker ">
+      <value>
+        <Color blue="0" green="0" opacity="1" red="1"/>
+      </value>
+    </ColorPicker>
+    <Data cursor="DEFAULT" enabled="1" id="data-colorPicker" visible="1"/>
+  </children>
+</AnchorPane>

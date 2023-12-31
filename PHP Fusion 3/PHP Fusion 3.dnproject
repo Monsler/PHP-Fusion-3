@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project author="irina" authorOS="Windows 10" createdAt="1701523351631" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="PHP Fusion 3" packageName="phpfusionthree" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1704008536156">
+  <tree>
+    <expanded>
+    <path src=""/>
+      <path src="/.pf3"/>
+      <path src="/.pf3/Game"/>
+      <path src="/src"/>
+      <path src="/src/.data"/>
+      <path src="/src/.data/img"/>
+      <path src="/src/.data/locale"/>
+      <path src="/src/.theme"/>
+      <path src="/src/phpfusionthree"/>
+      <path src="/src/phpfusionthree/forms"/>
+      <path src="/src/phpfusionthree/modules"/>
+    </expanded>
+  </tree>
+  <openedFiles>
+  <file src="PHP Fusion 3.dnproject"/>
+    <file src="src/phpfusionthree/forms/MainForm.php"/>
+    <file selected="1" src="src/phpfusionthree/forms/MenuForm.php"/>
+    <file src="src/phpfusionthree/forms/EditorForm.php"/>
+    <file src="src/phpfusionthree/modules/Editor.php"/>
+    <file src="src/phpfusionthree/forms/BuildForm.php"/>
+    <file src="src/phpfusionthree/forms/ValueEForm.php"/>
+    <file src="src/phpfusionthree/forms/SettingsForm.php"/>
+    <file src="src/phpfusionthree/forms/SplashForm.php"/>
+  </openedFiles>
+  <files/>
+  <behaviours>
+  <behaviour class="ide\project\behaviours\BundleProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\PhpProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\JavaPlatformBehaviour"/>
+    <behaviour class="ide\project\behaviours\GuiFrameworkProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\RunBuildProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\ShareProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\BackupProjectBehaviour"/>
+    <behaviour class="ide\project\behaviours\GradleProjectBehaviour"/>
+  </behaviours>
+</project>

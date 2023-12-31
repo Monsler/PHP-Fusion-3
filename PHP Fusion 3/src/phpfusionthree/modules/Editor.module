@@ -1,0 +1,27 @@
+{
+  "props": [],
+  "components": {
+    "timer": {
+      "type": "script\\TimerScript",
+      "x": 80,
+      "y": 32,
+      "props": {
+        "interval": 100,
+        "repeatable": false,
+        "autoStart": false
+      }
+    },
+    "build": {
+      "type": "script\\MacroScript",
+      "x": 48,
+      "y": 32,
+      "props": {}
+    },
+    "script": {
+      "type": "script\\MacroScript",
+      "x": 16,
+      "y": 32,
+      "props": {}
+    }
+  }
+}
